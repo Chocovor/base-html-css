@@ -6,6 +6,7 @@
 
 body{
     min-width: 100vh;
+    box-sizing: border-box;
 }
 
                             /*..........HEADER..........*/
@@ -17,13 +18,18 @@ body{
 }
 .logo{
     width: 60%;
-    padding: 20px;
+    padding-top: 20px;
     padding-right: 0px;
+    padding-left: 20px;
 }
-
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
 nav ul li{
     display: inline;
     padding: 10px;
+    margin-top: 25px;
 }
 nav ul li a{
     text-decoration: none;
@@ -38,10 +44,21 @@ h1{
 .wapper{
     position: relative;
 }
+.wapper div{
+    overflow: hidden;
+}
 .background{
     position: relative;
     z-index: 1;
     height: 655px;
+    width: 100%;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.background:hover{
+    transform: scale(1.075);
+    margin: auto;
 }
 .wish{
     position: absolute;
@@ -54,27 +71,78 @@ h1{
     position: absolute;
     z-index: 2;
     margin-top: -240px;
-    left: 675px;
-    color: salmon;
+    left: 661px;
+    color: white;
     font-size: 110%;
 }
+            /*..............the 2 buttons in same time................*/
+
 .buttons{
+    display: flex;
+    flex-direction: row;
     position: absolute;
     z-index: 2;
     margin-top: -190px;
-    left: 670px;
+    left: 500px;
+    cursor: pointer;
+}
+.buttons button{
+    text-transform: uppercase;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+
+}
+.buttons button a{
+    text-decoration: none;
+    
+}
+/*...............the first button...................*/
+.b1{
+    background-color:#F2BC4F;
+    border-color: #F2BC4F;
+    margin-right: 8px;
+}
+.b1 a{
+         color: black;
+}
+
+/*...............the second button....................*/
+.b2{
+    background-color: transparent;
+    border:solid white;
+    margin-left: 8px;
+}
+.b2 a{
+    color: white;
 }
 
                     /*.......SECOND-PART.........*/
+
 .second{
     display: flex;
     justify-content: space-around;
     z-index: 2;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 80px;
-    margin-right: 80px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: rgb(213, 213, 213);
+
 }
+.pictureS2 p{
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    width: 310px;
+    height: 90px;
+}
+.pictureS2 p a{
+    text-decoration: none;
+    color: black;
+}
+
 .ps2{
     width: 310px;
 }
@@ -94,6 +162,18 @@ h2{
     z-index: 2;
     color: white;
 }
+.third button{
+    text-transform: uppercase;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    background-color: blue;
+    margin-top: 5px;
+}
+.third button a{
+    text-decoration: none;
+    color: white;
+}
 
 .disneyPlus{
     display: flex;
@@ -106,15 +186,23 @@ h2{
 .disneyPlus div img{
     width: 450px;
     padding: 15px;
+    transition: transform .2s; /* Animation */
+}
+.disneyPlus div img:hover{
+    transform: scale(1.075);
+
 }
 .disneyPlus2{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .disneyPlus2 p{
     display: flex;
     justify-content: center;
     margin: 15px;
+    margin-bottom: 40px;
 }
 .disneyPlus2 div {
     display: flex;
@@ -132,10 +220,16 @@ h3{
     align-items: center;
     justify-content: center;
     color:black;
+    padding: 20px;
+    font-size: 180%;
 }
 .fourth img{
-    width: 1515px;
-    margin: 10px;
-    padding-left: 120px;
-    padding-right: 120px;
+    width: 1500px;
+    margin: 12px;
+    padding-left: 80px;
+    padding-right: 80px;
+    transition: transform .2s; /* Animation */
+}
+.fourth img:hover{
+    transform: scale(1.075);
 }
