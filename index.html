@@ -1,95 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Exo Grid</title>
+    <title></title>
 </head>
+<!--MVC= MODEL (transfer entre le serveur et l'appli web)
+         VIEW (ce qui s'affiche) 
+         CONTROLLER (toute les actions du backend)-->
 <body>
-    <h1>Grid & Ancre</h1>
     <header>
+
     </header>
     <main>
-        <h2>Exercice</h2>
         <section>
-            <div class="container">
-                <div class="box">boite1</div>
-                <div class="box">boite2</div>
-                <div class="box">boite3</div>
-                <div class="box">boite4</div>
-                <div class="box">boite5</div>
-                <div class="box">boite6</div>
-                <div class="box">boite7</div>
-                <div class="box">boite8</div>
-            </div>
-        </section>
-        <h2 id="ancre">Exercice</h2>
-        <section>
-            <div class="exercise2">
-                <div class="window box1">boite 1</div>
-                <div class="window box2">boite 2</div>
-                <div class="window box3">boite 3</div>
-                <div class="window box4">boite 4</div>
-                <div class="window box5">boite 5</div>
-                <div class="window box6">boite 6</div>
-                <div class="window box7">boite 7</div>
-                <div class="window box8">boite 8</div>
-            </div>
-        </section>
-        <h2>Exercice</h2>
-        <section>
-            <div class="exercise2">
-                <div class="door p1">boite1</div>
-                <div class="door p2">boite2</div>
-                <div class="door p3">boite3</div>
-                <div class="door p4">boite4</div>
-                <div class="door p5">boite5</div>
-                <div class="door p6">boite6</div>
-                <div class="door p7">boite7</div>
-                <div class="door p8">boite8</div>
-            </div>
-        </section>
-        <div class="ancrage">
-            <!-- ancre vers l'exercice 2-->
-            <a href="#ancre">aller vers l'ancre</a>
-            <a href="https://www.google.fr">ancre sur une autre page</a>
-            <a href= "index.html\#test">Disney</a>
-        </div>
-        <!--partie tableau-->
-        <table>
-            <caption>BIENVENUE AU DELICE</caption>
-            <tr>
-                <th colspan="7">menu</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td>grec</td>
-                <td>panini</td>
-                <td>burger</td>
-                <td>merguez</td>
-                <td>escalope</td>
-                <td>mix-grill 3 viandes</td>
-            </tr>
-            <tr>
-                <td>prix</td>
-                <td colspan="5">6euros</td>
-                <td>10euros</td>
-            </tr>
-            <tr>
-                <td>+ frites</td>
-                <td colspan="6">+0.50 d'euros</td>
-            </tr>
-            <tr>
-                <td>+ boisson</td>
-                <td colspan="6">+1 euros</td>
-            </tr>
-            <tr>
-                <td>assiette</td>
-                <td colspan="6">+3 euros</td>
-            </tr>
-        </table>
-    </main>
-    
+            <!--<form action=""><input type="text" name="prenom" id="prenom"></form>-->
+            <!--balise formulaire type a différencier de form:get et form:post-->
+            <!--form:post utilisé pour cacher les données-->
+            <label for="">Votre prénom</label>:<input placeholder="Tapez-ici" value="proposition par défaut" size="50px" maxlength="13" type="text" name="prenom" id="prenom">
+            <!--pour lier le label à la case d'entree des donnees-->
+            <!--<fieldset> pour regrouper les input
 
+                <legend>titre du formulaire</legend>
+
+            </fieldset>-->
+            <input type="submit" value="enregistrer">
+            <input type="button" value="button for JS" name="" id="">
+        </section>
+        <section>
+            <form action="" method="get">
+                <p><label for="">mail*</label>
+                    <input type="email" name="email" id="email" placeholder="adresse e-mail" required>
+                </p>
+                <p>
+                    <label for="">numéro</label>
+                    <input type="text" name="phone_number" id="phone_number">
+                </p>
+                <p>
+                    <label for="">adresse</label>
+                    <input type="text" name="adress" id="adress">
+                </p>
+                <p><!--check box-->
+                    Objet du contrat<br>
+                    <input type="checkbox" name="assurance" id="assurance"><label for="">assurance</label>
+                    <input type="checkbox" name="banque" id="banque"><label for="">banque</label>
+                    <input type="checkbox" name="habitation" id="habitation"><label for="">habitation</label>
+                </p>
+                <p> <!--radio-->
+                    <strong>Veuillez indiquer le nombre de personne composant votre foyer:</strong> <br>
+                    <input type="radio" name="age" value="moins de 3"><label for="">1 ou 2</label>
+                    <input type="radio" name="age" value="de 3 à 5"><label for="">entre 2 et 5</label>
+                    <input type="radio" name="age" value="plus de 5"><label for="">plus que 5</label>
+                </p>
+            </form>
+            <form action="" method="get">
+                <p> <!-- option de réponse: menu déroulant pré-rempli-->
+                    <label for="region">Région de résidence</label><br>
+                    <select name="region" id="region">
+                        <option value="Bretagne">Bretagne</option>
+                        <option value="Provence Alpes Cote d'Azur">Provence Alpes Cote d'Azur</option>
+                        <option value="Nouvelle Aquitaine" selected>Nouvelle Aquitaine</option>
+                        <option value="Ile de France">Ile de France</option>
+                        <option value="Centre">Centre</option>
+                        <option value="autre">autre</option>
+
+                    </select>
+                </p>
+                <p> <!--fieldset-->
+                    <fieldset>
+                        <legend>Vos coordonnees</legend><!-- titre du fieldset-->
+                        <label for="">quel est votre nom ?*</label>
+                        <input type="text" name="nom" id="nom" required><br>
+                        <label for="">quel est votre prenom ?*</label>
+                        <input type="text" name="prenom" id="prnom" required><br>
+                        <label for="">quel est votre surnom ?</label>
+                        <input type="text" name="surnom" id="surnom"><br>
+                    </fieldset>
+                    *Champs obligatoires
+                </p>
+                <input type="submit" value="mettre à jour">
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
