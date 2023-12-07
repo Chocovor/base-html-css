@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                            /*..........HEADER..........*/
+
+
+.header{
+    display: flex;
+    justify-content: left;
+}
+.logo{
+    width: 60%;
+    padding: 20px;
+    padding-right: 0px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+                       /*..........MAIN..........*/
+body{
+    min-width: 100vh;
+}
+
+           /*............FIRST-PART.............*/
+h1{
+    color: transparent;
+}
+.first{
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/eu_xx_wish_v1_hero2_e6bfb6e4.jpeg?region=0,0,3200,1372);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+.firstSlogan{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+                    /*.......SECOND-PART.........*/
+.second{
+    display: flex;
+    justify-content: space-around;
+}
+.second div {
+    width: 20%;
+}
+
+                    /*........THIRD-PART..........*/
+.third{
+    background-color: rgba(34, 34, 196, 0.764);
+}
+.disneyPlus{
+    display: flex;
+    justify-content: space-around;
+}

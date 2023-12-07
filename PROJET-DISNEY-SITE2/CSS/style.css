@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body{
+    min-width: 100vh;
+}*/
+
+                            /*..........HEADER..........*/
+
+
+.header{
+    display: flex;
+    justify-content: left;
+}
+.logo{
+    width: 60%;
+    padding: 20px;
+    padding-right: 0px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#navDesktop{
+    display: none;
+}
+.menu{
+    position: fixed;
+}
+#hamburger{
+    display: none;
+}
+
+                       /*..........MAIN..........*/
+
+           /*............FIRST-PART.............*/
+h1{
+    color: transparent;
+}
+.wapper{
+    position: relative;
+}
+.background{
+    position: relative;
+    z-index: 1;
+    height: 655px;
+    width: 100vw;
+}
+.wish{
+    position: absolute;
+    z-index: 2;
+    margin-top: -540px;
+    left: 590px;
+    height: 285px;
+    width: 100vw;
+}
+.announcement{
+    position: absolute;
+    z-index: 2;
+    margin-top: -240px;
+    left: 675px;
+    color: salmon;
+    font-size: 110%;
+}
+.buttons{
+    position: absolute;
+    z-index: 2;
+    margin-top: -190px;
+    left: 670px;
+}
+
+                    /*.......SECOND-PART.........*/
+.second{
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.ps2{
+    width: 310px;
+}
+.second div {
+    width: 25%;
+}
+
+                    /*........THIRD-PART..........*/
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.third{
+    background-color: #030C40;
+    z-index: 2;
+    color: white;
+}
+
+.disneyPlus{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.disneyPlus div img{
+    width: 450px;
+    padding: 15px;
+}
+.disneyPlus2{
+    display: flex;
+    flex-direction: column;
+}
+.disneyPlus2 p{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.disneyPlus2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disneyPlus2 div img{
+    width: 50%;
+}
+
+
+            /*.......FOURTH-PART........*/
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+.fourth img{
+    width: 1515px;
+    margin: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+/*partie media querie: regrouper les lignes de commandes ensemble pour tout le responsive*/
+/*pour teblette: 800px et sur portable 425px*/ 
+/*max-width pour les ecrans jusqu'à X pixels*/
+/*min-width pour les ecrans inferieur à X pixels*/
+@media screen (max-width:425px){
+    
+}
+@media screen (min-width: 426) and (max-width:800px){
+    
+}

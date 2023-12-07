@@ -1,0 +1,115 @@
+/*Preparer tout le generique au depart exemple hyperliens ou boutons*/
+/* Suppression des marges et des bords pour html*/
+*{
+    padding: 0;
+    margin: 0;
+}
+h1,h2{
+    margin: 0 auto;
+}
+/*exercice 1*/
+.container{
+    display: grid;/*initialise le tableau grid*/
+    grid-template-columns: 1fr 1fr 1fr;/*crée 3 colonnes avec la taille définie*/
+    grid-template-rows: 100px 150px 200px;/*crée 3 lignes*/
+    gap: 10px;
+    padding: 20px;
+    margin: auto;
+}
+.container div{
+    margin: auto;
+    padding: 10px;
+}
+.box{
+    border: solid;
+    font-style: italic;
+    color: blue;
+}
+/*exercice 2*/
+.exercise2{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    gap: 10px;
+    margin-bottom: 50px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1024px-SNice.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.exercise2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.3) ;
+}
+.window{
+    border: solid;
+    color: blueviolet;
+
+}
+.box1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.box2{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+.box3{
+    grid-column: 3 / 3;
+    grid-row: 2/4;
+}
+.box6{
+    grid-column: 1/3;
+}
+.box8{
+    grid-column: 1/4;
+}
+/*exercice 3*/
+
+.door{
+    border: solid;
+    color: brown;
+}
+.p1{
+    grid-column: 1/4;
+}
+.p2{
+    grid-column: 1/3;
+}
+.p3{
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.p6{
+    grid-column: 1/3;
+}
+.p8{
+    grid-column: 1/4;
+}
+/*display none dans les media query 
+pour enlever des infos sur le mode tablette ou téléphone*/
+
+/*Exercice 4*/
+.ancrage{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.ancrage a{
+    text-decoration: none;
+    font-size: 30px;
+    color: yellow;
+    background-color: black;
+}
+/*partie tableau*/
+td,th{
+    border: 2px solid black;
+    text-align: center;
+    padding: 2px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}

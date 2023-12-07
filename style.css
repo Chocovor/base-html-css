@@ -1,0 +1,126 @@
+/*Preparer tout le generique au depart exemple hyperliens ou boutons*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /*...............START HEADER.............................*/  
+.header{
+    display: flex; 
+    justify-content: space-around;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(194, 220, 25);
+}
+img {
+    width: 8em;
+    /*..............END HEADER......................*/
+    /*.................START MAIN..................*/
+}
+h1{
+    color: rgb(194, 220, 25);
+}
+header{
+    background-color: black;
+}
+main{
+    background-image: url(https://www.rustica.fr/images/ciel-etoile-l1200-h0.jpg.webp);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+footer{
+    background-color: black;
+}
+.image{
+    display: flex ;
+    justify-content: space-around;
+    padding-left: 15%;
+}
+.text{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Ephesis', cursive;
+    font-size: 25px;
+}
+.destinationImage1{
+    width: 20em;
+    opacity: calc(0.8);
+}
+.destinationImage2{
+    width: 30em;
+    margin: auto;
+    overflow: hidden;
+    opacity: calc(0.75);
+}
+.description{
+    margin: 1em;
+    margin-block-end: 2em;
+    text-align: justify;
+    font-family: 'Ephesis', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.map{
+    margin-block-start: 1em;
+}
+.bloc{
+    width: 400px;
+    height: 100px;
+    background: linear-gradient(45deg,#8360c3,#2ebf91); 
+    opacity: calc(0.7);
+    /*possibilité de mettre 4 valeurs dans le border radius
+    la 1ere coin en haut a gauche puis dans le sens des aiguilles d'une montre*/
+    border-radius:0% 50% 50% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-color: #bf2e9b;
+    color: black;
+    border-width: 4px;
+    box-shadow: 100px 0px #662ebf;
+}
+button{
+    width: 95px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+
+/*indiquer le survol du bouton*/
+a:hover {
+    color: #caf700;
+}
+/*indiquer le clic en cours*/
+a:active{
+    background-color: #662ebf;
+}
+/*pour la fonction tab*/
+a:focus{
+    background-color: aqua;
+}
+/*pour signifier que: déjà visité*/
+
+a:visited{
+    color: orangered;
+}    
+button:hover{
+    background-color: #bf2e9b;
+}
+
+ /*.................END MAIN..................*/
