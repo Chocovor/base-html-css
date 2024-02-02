@@ -3,15 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     min-width: 100vh;
     box-sizing: border-box;
 }
-
                             /*..........HEADER..........*/
-
-
 .header{
     display: flex;
     justify-content: left;
@@ -77,7 +73,6 @@ nav ul li a{
 #menu_links:hover{
     display: block;
 }
-
   /**/  
 #didi:hover ~ .more{
     display: block;
@@ -91,7 +86,6 @@ nav ul li a{
 .more a:hover{
     background-color: rgb(233, 233, 233);
 }
-
 .more{
     display: none
 }
@@ -158,11 +152,9 @@ h1{
     border-radius: 25px;
     width: 250px;
     height: 50px;
-
 }
 .buttons button a{
     text-decoration: none;
-    
 }
 /*...............the first button...................*/
 .b1{
@@ -173,7 +165,6 @@ h1{
 .b1 a{
          color: black;
 }
-
 /*...............the second button....................*/
 .b2{
     background-color: transparent;
@@ -183,9 +174,7 @@ h1{
 .b2 a{
     color: white;
 }
-
                     /*.......SECOND-PART.........*/
-
 .second{
     display: flex;
     justify-content: space-around;
@@ -195,7 +184,6 @@ h1{
     padding-left: 80px;
     padding-right: 80px;
     background-color: rgb(213, 213, 213);
-
 }
 .pictureS2 p{
     padding-bottom: 5px;
@@ -209,14 +197,12 @@ h1{
     text-decoration: none;
     color: black;
 }
-
 .ps2{
     width: 310px;
 }
 .second div {
     width: 25%;
 }
-
                     /*........THIRD-PART..........*/
 h2{
     display: flex;
@@ -241,7 +227,6 @@ h2{
     text-decoration: none;
     color: white;
 }
-
 .disneyPlus{
     display: flex;
     justify-content: space-around;
@@ -257,7 +242,6 @@ h2{
 }
 .disneyPlus div img:hover{
     transform: scale(1.075);
-
 }
 .disneyPlus2{
     display: flex;
@@ -279,8 +263,6 @@ h2{
 .disneyPlus2 div img{
     width: 50%;
 }
-
-
             /*.......FOURTH-PART........*/
 h3{
     display: flex;
@@ -300,7 +282,6 @@ h3{
 .fourth img:hover{
     transform: scale(1.075);
 }
-
 /*partie media querie: regrouper les lignes de commandes ensemble pour tout le responsive*/
 /*pour teblette: 800px et sur portable 425px*/ 
 /*max-width pour les ecrans jusqu'à X pixels*/
